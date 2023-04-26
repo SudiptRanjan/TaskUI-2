@@ -13,7 +13,7 @@ public class MenuButton : MonoBehaviour
     public Canvas homeCanvas;
     public Canvas sideCanvas;
     public Canvas tableListCanvas;
-    public Canvas popUpCanvas;
+    public Canvas popCanvas;
     //private void Start()
     //{
     //    //bankButton = gameObject.GetComponent<Canvas>();
@@ -159,19 +159,36 @@ public class MenuButton : MonoBehaviour
 
     public void PopUp_OnClick()
     {
-        if (popUpCanvas.gameObject.activeInHierarchy == true)
+        if (popCanvas.gameObject.activeInHierarchy == true)
         {
-            popUpCanvas.gameObject.SetActive(false);
-            popUpCanvas.enabled = false;
+            popCanvas.gameObject.SetActive(false);
+            popCanvas.enabled = false;
 
         }
         else
         {
-            popUpCanvas.gameObject.SetActive(true);
+            popCanvas.gameObject.SetActive(true);
+            popCanvas.enabled = true;
+        }
+
+    }
+
+    public void PopUpYesNo_OnClick()
+    {
+        if (tableListCanvas.gameObject.activeInHierarchy == true)
+        {
+            tableListCanvas.gameObject.SetActive(false);
+            tableListCanvas.enabled = false;
+
+        }
+        else
+        {
+            tableListCanvas.gameObject.SetActive(true);
             tableListCanvas.enabled = true;
         }
 
     }
+
 
 
 
