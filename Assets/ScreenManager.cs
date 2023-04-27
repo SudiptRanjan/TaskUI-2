@@ -2,11 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ScreenManager : Basescreen
+public class ScreenManager : MonoBehaviour
 {
     public Basescreen[] screens;
     public Basescreen currentScreen;
     public static ScreenManager instance;
+    public Canvas Popupcanvas;
     private void Awake()
     {
         instance = this;
@@ -27,4 +28,17 @@ public class ScreenManager : Basescreen
             }
         }
     }
+    public void PopupEnable()
+    {
+        Popupcanvas.enabled = true;
+    }
+
+    public void PopupDisable()
+    {
+        Debug.Log("Pressed");
+        Popupcanvas.enabled = false;
+
+    }
+
+
 }

@@ -207,7 +207,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 908144451}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: MenuButton, Assembly-CSharp
         m_MethodName: KYCButton_OnClick
         m_Mode: 1
@@ -2748,7 +2748,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1358982496}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: MenuButton, Assembly-CSharp
         m_MethodName: SideBarProfile_OnClick
         m_Mode: 1
@@ -3188,12 +3188,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bafdec441d74ef24985c0ae21f2970dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  screenType: 0
-  canvas: {fileID: 0}
   screens:
-  - {fileID: 1447170819}
-  - {fileID: 444772167}
-  currentScreen: {fileID: 1447170819}
+  - {fileID: 1447170818}
+  - {fileID: 444772166}
+  - {fileID: 449500552}
+  - {fileID: 1131419299}
+  - {fileID: 908144451}
+  - {fileID: 1663548102}
+  - {fileID: 0}
+  currentScreen: {fileID: 1447170818}
+  Popupcanvas: {fileID: 1820662544}
 --- !u!4 &187031488
 Transform:
   m_ObjectHideFlags: 0
@@ -3201,13 +3205,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 187031486}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 296.94028, y: 1009.70624, z: 0.074044466}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &196740796
 GameObject:
@@ -3545,7 +3549,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1131419299}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: MenuButton, Assembly-CSharp
         m_MethodName: BasicButton_OnClick
         m_Mode: 1
@@ -6162,7 +6166,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1131419299}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: MenuButton, Assembly-CSharp
         m_MethodName: HomeButton_OnClick
         m_Mode: 1
@@ -6739,7 +6743,7 @@ GameObject:
   - component: {fileID: 444772164}
   - component: {fileID: 444772163}
   - component: {fileID: 444772162}
-  - component: {fileID: 444772167}
+  - component: {fileID: 444772166}
   m_Layer: 5
   m_Name: Tablelist
   m_TagString: Untagged
@@ -6832,7 +6836,7 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &444772167
+--- !u!114 &444772166
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6845,7 +6849,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   screenType: 1
-  canvas: {fileID: 444772164}
+  canvas: {fileID: 0}
+  backBtn: {fileID: 1497766831}
+  playButton: {fileID: 882956968}
+  NoButton: {fileID: 1918292108}
 --- !u!1 &449500546
 GameObject:
   m_ObjectHideFlags: 0
@@ -6858,7 +6865,7 @@ GameObject:
   - component: {fileID: 449500549}
   - component: {fileID: 449500548}
   - component: {fileID: 449500547}
-  - component: {fileID: 449500551}
+  - component: {fileID: 449500552}
   m_Layer: 5
   m_Name: ProfileBank1
   m_TagString: Untagged
@@ -6913,7 +6920,7 @@ Canvas:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 449500546}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 0
   m_Camera: {fileID: 0}
@@ -6952,7 +6959,7 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &449500551
+--- !u!114 &449500552
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6961,17 +6968,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 449500546}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e6b4a7d274a553843b6ed40b56368ebf, type: 3}
+  m_Script: {fileID: 11500000, guid: 72e947395df5d2e40b1cfe1dfe076f7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bankCanvas: {fileID: 449500549}
-  basicCanvas: {fileID: 1131419297}
-  statisticsCanvas: {fileID: 908144449}
-  kycCanvas: {fileID: 1663548099}
-  homeCanvas: {fileID: 1447170816}
-  sideCanvas: {fileID: 1358982494}
-  tableListCanvas: {fileID: 444772164}
-  popCanvas: {fileID: 0}
+  screenType: 2
+  canvas: {fileID: 0}
+  backBtn: {fileID: 527403933}
+  basicBtn: {fileID: 1061604573}
+  bankBtn: {fileID: 774126672}
+  statBtn: {fileID: 1145770567}
+  kycBtn: {fileID: 584985244}
 --- !u!1 &455080364
 GameObject:
   m_ObjectHideFlags: 0
@@ -7987,7 +7993,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1663548101}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: MenuButton, Assembly-CSharp
         m_MethodName: BankButton_OnClick
         m_Mode: 1
@@ -8295,7 +8301,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 449500551}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: MenuButton, Assembly-CSharp
         m_MethodName: HomeButton_OnClick
         m_Mode: 1
@@ -8391,7 +8397,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1663548101}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: MenuButton, Assembly-CSharp
         m_MethodName: BasicButton_OnClick
         m_Mode: 1
@@ -9080,7 +9086,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1131419299}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: MenuButton, Assembly-CSharp
         m_MethodName: BankButton_OnClick
         m_Mode: 1
@@ -10755,7 +10761,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &774126670
 GameObject:
@@ -10841,7 +10847,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 449500551}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: LoginButton, Assembly-CSharp
         m_MethodName: BankButton_OnClick
         m_Mode: 1
@@ -12445,6 +12451,139 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 882956966}
   m_CullTransparentMesh: 1
+--- !u!1 &889624408
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 889624409}
+  - component: {fileID: 889624412}
+  - component: {fileID: 889624411}
+  - component: {fileID: 889624410}
+  m_Layer: 5
+  m_Name: TouchArea
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &889624409
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 889624408}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1447170817}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 36.832977, y: -48.504}
+  m_SizeDelta: {x: 73.6659, y: 982.99}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &889624410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 889624408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 889624411}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1447170818}
+        m_TargetAssemblyTypeName: HomeUI, Assembly-CSharp
+        m_MethodName: OnClickTouchArea
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &889624411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 889624408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &889624412
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 889624408}
+  m_CullTransparentMesh: 1
 --- !u!1 &895369838
 GameObject:
   m_ObjectHideFlags: 0
@@ -12906,17 +13045,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 908144446}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e6b4a7d274a553843b6ed40b56368ebf, type: 3}
+  m_Script: {fileID: 11500000, guid: 72e947395df5d2e40b1cfe1dfe076f7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bankCanvas: {fileID: 449500549}
-  basicCanvas: {fileID: 1131419297}
-  statisticsCanvas: {fileID: 908144449}
-  kycCanvas: {fileID: 1663548099}
-  homeCanvas: {fileID: 1447170816}
-  sideCanvas: {fileID: 1358982494}
-  tableListCanvas: {fileID: 444772164}
-  popCanvas: {fileID: 0}
+  screenType: 4
+  canvas: {fileID: 0}
+  backBtn: {fileID: 1875071382}
+  basicBtn: {fileID: 1284455865}
+  bankBtn: {fileID: 1704107528}
+  statBtn: {fileID: 2067519570}
+  kycBtn: {fileID: 2933597}
 --- !u!1 &918451054
 GameObject:
   m_ObjectHideFlags: 0
@@ -14179,7 +14317,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 449500551}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: MenuButton, Assembly-CSharp
         m_MethodName: BasicButton_OnClick
         m_Mode: 1
@@ -16163,8 +16301,8 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1131419294}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -1.3078084}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -16178,7 +16316,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -343.5635, y: -1016.9806}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &1131419299
@@ -16190,17 +16328,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1131419294}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e6b4a7d274a553843b6ed40b56368ebf, type: 3}
+  m_Script: {fileID: 11500000, guid: 72e947395df5d2e40b1cfe1dfe076f7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bankCanvas: {fileID: 449500549}
-  basicCanvas: {fileID: 1131419297}
-  statisticsCanvas: {fileID: 908144449}
-  kycCanvas: {fileID: 1663548099}
-  homeCanvas: {fileID: 1447170816}
-  sideCanvas: {fileID: 1358982494}
-  tableListCanvas: {fileID: 444772164}
-  popCanvas: {fileID: 0}
+  screenType: 3
+  canvas: {fileID: 0}
+  backBtn: {fileID: 391053534}
+  basicBtn: {fileID: 202693054}
+  bankBtn: {fileID: 578563284}
+  statBtn: {fileID: 1617411925}
+  kycBtn: {fileID: 1535723995}
 --- !u!1 &1135997757
 GameObject:
   m_ObjectHideFlags: 0
@@ -16361,7 +16498,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 449500551}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: MenuButton, Assembly-CSharp
         m_MethodName: StatisticsButton_OnClick
         m_Mode: 1
@@ -17273,7 +17410,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1358982496}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: MenuButton, Assembly-CSharp
         m_MethodName: SideBarTableList_OnClick
         m_Mode: 1
@@ -18293,7 +18430,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 908144451}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: MenuButton, Assembly-CSharp
         m_MethodName: BasicButton_OnClick
         m_Mode: 1
@@ -19472,19 +19609,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1358396498}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: MenuButton, Assembly-CSharp
-        m_MethodName: SideButton_OnClick
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &1358982491
 GameObject:
   m_ObjectHideFlags: 0
@@ -19497,7 +19622,6 @@ GameObject:
   - component: {fileID: 1358982494}
   - component: {fileID: 1358982493}
   - component: {fileID: 1358982492}
-  - component: {fileID: 1358982496}
   m_Layer: 5
   m_Name: Sidebar
   m_TagString: Untagged
@@ -19588,33 +19712,13 @@ RectTransform:
   - {fileID: 1710642105}
   - {fileID: 137973872}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &1358982496
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1358982491}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e6b4a7d274a553843b6ed40b56368ebf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bankCanvas: {fileID: 449500549}
-  basicCanvas: {fileID: 1131419297}
-  statisticsCanvas: {fileID: 908144449}
-  kycCanvas: {fileID: 1663548099}
-  homeCanvas: {fileID: 1447170816}
-  sideCanvas: {fileID: 1358982494}
-  tableListCanvas: {fileID: 444772164}
-  popCanvas: {fileID: 0}
 --- !u!1 &1360407558
 GameObject:
   m_ObjectHideFlags: 0
@@ -20716,7 +20820,7 @@ GameObject:
   - component: {fileID: 1447170816}
   - component: {fileID: 1447170815}
   - component: {fileID: 1447170814}
-  - component: {fileID: 1447170819}
+  - component: {fileID: 1447170818}
   m_Layer: 5
   m_Name: Home
   m_TagString: Untagged
@@ -20804,6 +20908,7 @@ RectTransform:
   - {fileID: 1163949878}
   - {fileID: 1662483506}
   - {fileID: 1553007152}
+  - {fileID: 889624409}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -20812,7 +20917,7 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &1447170819
+--- !u!114 &1447170818
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -20825,7 +20930,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   screenType: 0
-  canvas: {fileID: 1447170816}
+  canvas: {fileID: 0}
+  practiceBtn: {fileID: 2066496101}
+  profileBtn: {fileID: 1358396500}
+  touchArea: {fileID: 889624410}
+  touchCanvas: {fileID: 1358982494}
 --- !u!1 &1474682467
 GameObject:
   m_ObjectHideFlags: 0
@@ -21333,19 +21442,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1497766832}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 444772167}
-        m_TargetAssemblyTypeName: TablelistUI, Assembly-CSharp
-        m_MethodName: OnClickBack
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1497766832
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21814,7 +21911,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1663548101}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: MenuButton, Assembly-CSharp
         m_MethodName: KYCButton_OnClick
         m_Mode: 1
@@ -21948,7 +22045,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1131419299}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: MenuButton, Assembly-CSharp
         m_MethodName: KYCButton_OnClick
         m_Mode: 1
@@ -23809,58 +23906,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1580725956}
   m_CullTransparentMesh: 1
---- !u!1 &1583250883
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1583250884}
-  - component: {fileID: 1583250885}
-  m_Layer: 0
-  m_Name: sceneswap
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &1583250884
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1583250883}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 350.06476, y: 933.5006, z: 10.25921}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1583250885
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1583250883}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e6b4a7d274a553843b6ed40b56368ebf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bankCanvas: {fileID: 0}
-  basicCanvas: {fileID: 0}
-  statisticsCanvas: {fileID: 0}
-  kycCanvas: {fileID: 0}
-  homeCanvas: {fileID: 0}
-  sideCanvas: {fileID: 0}
-  tableListCanvas: {fileID: 0}
-  popCanvas: {fileID: 0}
 --- !u!1 &1583432628
 GameObject:
   m_ObjectHideFlags: 0
@@ -24309,7 +24354,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1131419299}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: MenuButton, Assembly-CSharp
         m_MethodName: StatisticsButton_OnClick
         m_Mode: 1
@@ -25736,7 +25781,7 @@ GameObject:
   - component: {fileID: 1663548099}
   - component: {fileID: 1663548098}
   - component: {fileID: 1663548097}
-  - component: {fileID: 1663548101}
+  - component: {fileID: 1663548102}
   m_Layer: 5
   m_Name: ProfileKYC
   m_TagString: Untagged
@@ -25830,7 +25875,7 @@ RectTransform:
   m_AnchoredPosition: {x: -343.5635, y: -1016.9806}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &1663548101
+--- !u!114 &1663548102
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -25839,17 +25884,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1663548096}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e6b4a7d274a553843b6ed40b56368ebf, type: 3}
+  m_Script: {fileID: 11500000, guid: 72e947395df5d2e40b1cfe1dfe076f7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bankCanvas: {fileID: 449500549}
-  basicCanvas: {fileID: 1131419297}
-  statisticsCanvas: {fileID: 908144449}
-  kycCanvas: {fileID: 1663548099}
-  homeCanvas: {fileID: 1447170816}
-  sideCanvas: {fileID: 1358982494}
-  tableListCanvas: {fileID: 444772164}
-  popCanvas: {fileID: 0}
+  screenType: 5
+  canvas: {fileID: 0}
+  backBtn: {fileID: 2115929774}
+  basicBtn: {fileID: 530095250}
+  bankBtn: {fileID: 509445375}
+  statBtn: {fileID: 1691668902}
+  kycBtn: {fileID: 1528175245}
 --- !u!1 &1664600348
 GameObject:
   m_ObjectHideFlags: 0
@@ -26072,7 +26116,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1663548101}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: MenuButton, Assembly-CSharp
         m_MethodName: StatisticsButton_OnClick
         m_Mode: 1
@@ -26373,7 +26417,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 908144451}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: MenuButton, Assembly-CSharp
         m_MethodName: BankButton_OnClick
         m_Mode: 1
@@ -27351,7 +27395,6 @@ GameObject:
   - component: {fileID: 1820662544}
   - component: {fileID: 1820662543}
   - component: {fileID: 1820662542}
-  - component: {fileID: 1820662546}
   m_Layer: 5
   m_Name: Popup
   m_TagString: Untagged
@@ -27436,33 +27479,13 @@ RectTransform:
   - {fileID: 120758764}
   - {fileID: 1925865196}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &1820662546
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1820662541}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e6b4a7d274a553843b6ed40b56368ebf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bankCanvas: {fileID: 449500549}
-  basicCanvas: {fileID: 1131419297}
-  statisticsCanvas: {fileID: 908144449}
-  kycCanvas: {fileID: 1663548099}
-  homeCanvas: {fileID: 1447170816}
-  sideCanvas: {fileID: 1358982494}
-  tableListCanvas: {fileID: 444772164}
-  popCanvas: {fileID: 1820662544}
 --- !u!1 &1820751594
 GameObject:
   m_ObjectHideFlags: 0
@@ -28167,7 +28190,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 908144451}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: MenuButton, Assembly-CSharp
         m_MethodName: HomeButton_OnClick
         m_Mode: 1
@@ -28994,7 +29017,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1820662546}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: MenuButton, Assembly-CSharp
         m_MethodName: PopUpYesNo_OnClick
         m_Mode: 1
@@ -30431,7 +30454,7 @@ Transform:
   - {fileID: 908144450}
   - {fileID: 1663548100}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2038800135
 GameObject:
@@ -31198,19 +31221,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2066496099}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1447170819}
-        m_TargetAssemblyTypeName: HomeUI, Assembly-CSharp
-        m_MethodName: OnClickCash
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &2067519568
 GameObject:
   m_ObjectHideFlags: 0
@@ -31295,7 +31306,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 908144451}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: MenuButton, Assembly-CSharp
         m_MethodName: StatisticsButton_OnClick
         m_Mode: 1
@@ -32271,7 +32282,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1663548101}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: MenuButton, Assembly-CSharp
         m_MethodName: HomeButton_OnClick
         m_Mode: 1
